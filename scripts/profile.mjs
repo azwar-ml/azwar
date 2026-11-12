@@ -40,7 +40,19 @@ try {
       });
     }
     await page.addInitScript(() => {
-      window.__qa = { lcp: 0, cls: 0, longTasks: 0 };
+      window.__qa = { lcp: 0, cls: 0, longTasks: 0, draws: {} };
+      const clear = CanvasRenderingContext2D.prototype.clearRect;
+      CanvasRenderingContext2D.prototype.clearRect = function (...args) {
+        const kind = this.canvas.closest('[data-playground]')?.getAttribute('data-playground');
+        if (kind) {
+          const now = performance.now();
+          const sample = window.__qa.draws[kind] ?? { count: 0, first: now, last: now };
+          sample.count++;
+          sample.last = now;
+          window.__qa.draws[kind] = sample;
+        }
+        return clear.apply(this, args);
+      };
       new PerformanceObserver((l) => {
         for (const e of l.getEntries()) window.__qa.lcp = e.startTime;
       }).observe({ type: 'largest-contentful-paint', buffered: true });
@@ -52,7 +64,16 @@ try {
       }).observe({ type: 'longtask', buffered: true });
     });
     await page.goto('http://127.0.0.1:3200/');
-    await page.waitForTimeout(1800);
+    await page.locator('[data-playground=hero] canvas').waitFor();
+    await page.waitForFunction(() => (window.__qa.draws.hero?.count ?? 0) >= 3);
+    await page.evaluate(() => {
+      window.__qa.sceneReadyMs = window.__qa.draws.hero.first;
+    });
+    await page.waitForTimeout(2500);
+    await page.evaluate(() => {
+      window.__qa.draws = {};
+    });
+    await page.waitForTimeout(3000);
     const home = await page.evaluate(() => ({
       ...window.__qa,
       resources: performance

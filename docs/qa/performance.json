@@ -4,9 +4,41 @@
     {
       "profile": "Chromium laptop, unthrottled",
       "home": {
-        "lcp": 136,
+        "lcp": 192,
         "cls": 0,
         "longTasks": 0,
+        "draws": {
+          "hero": {
+            "count": 269,
+            "first": 304.89999997615814,
+            "last": 4808.5
+          },
+          "stars": {
+            "count": 1,
+            "first": 308.89999997615814,
+            "last": 308.89999997615814
+          },
+          "light": {
+            "count": 1,
+            "first": 309.1999999284744,
+            "last": 309.1999999284744
+          },
+          "puzzle": {
+            "count": 1,
+            "first": 309.2999999523163,
+            "last": 309.2999999523163
+          },
+          "break": {
+            "count": 1,
+            "first": 309.59999990463257,
+            "last": 309.59999990463257
+          },
+          "calm": {
+            "count": 1,
+            "first": 309.7999999523163,
+            "last": 309.7999999523163
+          }
+        },
         "resources": [
           {
             "name": "2whg2n5r_t_s1.js",
@@ -21,28 +53,40 @@
             "encodedBytes": 3905
           },
           {
-            "name": "3q8lsfs-edo14.js",
-            "encodedBytes": 706
-          },
-          {
-            "name": "25kwcs5ivbi_0.js",
-            "encodedBytes": 11057
-          },
-          {
             "name": "2pdavqnl1f8l_.js",
             "encodedBytes": 45354
           },
           {
-            "name": "14kzsa-zdqiye.js",
-            "encodedBytes": 1373
+            "name": "0ze9s9kpy32n-.js",
+            "encodedBytes": 11058
           },
           {
-            "name": "0l__szc9_fhnm.js",
-            "encodedBytes": 2358
+            "name": "3q8lsfs-edo14.js",
+            "encodedBytes": 706
           },
           {
-            "name": "34h1ktvge462u.js",
-            "encodedBytes": 7186
+            "name": "3g727amrl7lrx.js",
+            "encodedBytes": 215
+          },
+          {
+            "name": "3k1agnnrboq55.js",
+            "encodedBytes": 23525
+          },
+          {
+            "name": "02wy0hohz5ij0.js",
+            "encodedBytes": 32220
+          },
+          {
+            "name": "34ysf94o2q39-.js",
+            "encodedBytes": 247
+          },
+          {
+            "name": "313o4sgh250wd.js",
+            "encodedBytes": 2328
+          },
+          {
+            "name": "01wp0ilns6prx.js",
+            "encodedBytes": 7188
           }
         ],
         "heap": 10000000
@@ -64,9 +108,41 @@
     {
       "profile": "Chromium phone emulation DPR 3, CPU 4x, 1.6 Mbps, 150ms latency",
       "home": {
-        "lcp": 1252,
+        "lcp": 2328,
         "cls": 0,
-        "longTasks": 12,
+        "longTasks": 19,
+        "draws": {
+          "hero": {
+            "count": 7,
+            "first": 6360,
+            "last": 8901.600000023842
+          },
+          "stars": {
+            "count": 2,
+            "first": 6486.899999976158,
+            "last": 7093.700000047684
+          },
+          "light": {
+            "count": 2,
+            "first": 6503.600000023842,
+            "last": 7094.300000071526
+          },
+          "puzzle": {
+            "count": 2,
+            "first": 6515.300000071526,
+            "last": 7095.800000071526
+          },
+          "break": {
+            "count": 2,
+            "first": 6543.700000047684,
+            "last": 7098.100000023842
+          },
+          "calm": {
+            "count": 2,
+            "first": 6570.800000071526,
+            "last": 7108.5
+          }
+        },
         "resources": [
           {
             "name": "2whg2n5r_t_s1.js",
@@ -85,29 +161,37 @@
             "encodedBytes": 3905
           },
           {
-            "name": "25kwcs5ivbi_0.js",
-            "encodedBytes": 11057
+            "name": "0ze9s9kpy32n-.js",
+            "encodedBytes": 11058
           },
           {
             "name": "3q8lsfs-edo14.js",
             "encodedBytes": 706
           },
           {
-            "name": "14kzsa-zdqiye.js",
-            "encodedBytes": 1373
+            "name": "3g727amrl7lrx.js",
+            "encodedBytes": 215
           },
           {
-            "name": "0l__szc9_fhnm.js",
-            "encodedBytes": 2358
+            "name": "02wy0hohz5ij0.js",
+            "encodedBytes": 32220
+          },
+          {
+            "name": "3k1agnnrboq55.js",
+            "encodedBytes": 23525
+          },
+          {
+            "name": "34ysf94o2q39-.js",
+            "encodedBytes": 247
           }
         ],
         "heap": 10000000
       },
       "particles": {
-        "fps": 37,
-        "dpr": 1.5,
-        "count": 300,
-        "quality": "auto (300)",
+        "fps": 9,
+        "dpr": 1,
+        "count": 195,
+        "quality": "auto (195)",
         "width": 357,
         "height": 481,
         "mode": "Canvas 2D",
