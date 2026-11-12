@@ -1,0 +1,10 @@
+.next
+node_modules
+.npm-cache
+test-results
+playwright-report
+package-lock.json
+AZWARISM_UNIVERSE_CODEX_MASTER_PLAN.md
+next-env.d.ts
+public
+docs/qa

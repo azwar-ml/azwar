@@ -1,0 +1,121 @@
+{
+  "note": "Local single-run lab samples; mobile uses CPU/network emulation. Not field CWV or physical-device results. No guaranteed FPS. Heap values may be privacy-rounded and are not a leak proof.",
+  "results": [
+    {
+      "profile": "Chromium laptop, unthrottled",
+      "home": {
+        "lcp": 136,
+        "cls": 0,
+        "longTasks": 0,
+        "resources": [
+          {
+            "name": "2whg2n5r_t_s1.js",
+            "encodedBytes": 8859
+          },
+          {
+            "name": "092r-mewpaf3q.js",
+            "encodedBytes": 71681
+          },
+          {
+            "name": "turbopack-2u1d16houkiyo.js",
+            "encodedBytes": 3905
+          },
+          {
+            "name": "3q8lsfs-edo14.js",
+            "encodedBytes": 706
+          },
+          {
+            "name": "25kwcs5ivbi_0.js",
+            "encodedBytes": 11057
+          },
+          {
+            "name": "2pdavqnl1f8l_.js",
+            "encodedBytes": 45354
+          },
+          {
+            "name": "14kzsa-zdqiye.js",
+            "encodedBytes": 1373
+          },
+          {
+            "name": "0l__szc9_fhnm.js",
+            "encodedBytes": 2358
+          },
+          {
+            "name": "34h1ktvge462u.js",
+            "encodedBytes": 7186
+          }
+        ],
+        "heap": 10000000
+      },
+      "particles": {
+        "fps": 60,
+        "dpr": 1,
+        "count": 650,
+        "quality": "auto (650)",
+        "width": 986,
+        "height": 499,
+        "mode": "Canvas 2D",
+        "paused": false,
+        "moving": true
+      },
+      "afterNavigationHeap": 10000000,
+      "errors": []
+    },
+    {
+      "profile": "Chromium phone emulation DPR 3, CPU 4x, 1.6 Mbps, 150ms latency",
+      "home": {
+        "lcp": 1252,
+        "cls": 0,
+        "longTasks": 12,
+        "resources": [
+          {
+            "name": "2whg2n5r_t_s1.js",
+            "encodedBytes": 8859
+          },
+          {
+            "name": "092r-mewpaf3q.js",
+            "encodedBytes": 71681
+          },
+          {
+            "name": "2pdavqnl1f8l_.js",
+            "encodedBytes": 45354
+          },
+          {
+            "name": "turbopack-2u1d16houkiyo.js",
+            "encodedBytes": 3905
+          },
+          {
+            "name": "25kwcs5ivbi_0.js",
+            "encodedBytes": 11057
+          },
+          {
+            "name": "3q8lsfs-edo14.js",
+            "encodedBytes": 706
+          },
+          {
+            "name": "14kzsa-zdqiye.js",
+            "encodedBytes": 1373
+          },
+          {
+            "name": "0l__szc9_fhnm.js",
+            "encodedBytes": 2358
+          }
+        ],
+        "heap": 10000000
+      },
+      "particles": {
+        "fps": 37,
+        "dpr": 1.5,
+        "count": 300,
+        "quality": "auto (300)",
+        "width": 357,
+        "height": 481,
+        "mode": "Canvas 2D",
+        "paused": false,
+        "moving": true
+      },
+      "afterNavigationHeap": 10000000,
+      "errors": []
+    }
+  ]
+}
